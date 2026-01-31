@@ -1,124 +1,147 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jesakyrwa Temizlik & İnşaat Hizmetleri</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-body{margin:0;padding:0;font-family:'Poppins',sans-serif;background:#f7f9fc;color:#222;}
-/* NAV */
-nav{background:#111;padding:15px;position:sticky;top:0;z-index:999;}
-nav ul{list-style:none;display:flex;justify-content:center;gap:30px;margin:0;}
-nav ul li a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
-nav ul li a:hover{color:#eab308;}
-/* SLIDER */
-.slider{position:relative;overflow:hidden;height:70vh;}
-.slider img{width:100%;height:70vh;object-fit:cover;position:absolute;opacity:0;transition:opacity 1s ease-in-out;}
-.slider img.active{opacity:1;}
-/* HERO TEXT */
-.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;}
-.hero-text h1{font-size:46px;margin-bottom:10px;font-weight:700;}
-.hero-text p{font-size:20px;margin-bottom:20px;}
-.btn{background:#eab308;color:#000;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;}
-/* SECTION */
-section{padding:60px 10%;}
-h2{font-size:32px;text-align:center;margin-bottom:20px;color:#1f2933;}
-p{font-size:16px;line-height:1.6;}
-/* SERVICES */
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.service-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:0.3s;}
-.service-box:hover{transform:translateY(-6px);}
-.service-box h3{margin-bottom:12px;color:#111;font-weight:600;}
-/* TRUST */
-.trust-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;text-align:center;}
-.trust-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.08);}
-.trust-card strong{display:block;font-size:18px;margin-bottom:8px;color:#1f2933;}
-/* FOOTER */
-footer{background:#111;color:#fff;text-align:center;padding:18px;font-size:14px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eserva Benzeri | Temizlik & İnşaat Hizmetleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581578731522-4b72ef6560e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-<!-- NAV -->
-<nav>
-<ul>
-<li><a href="#hakkimizda">Hakkımızda</a></li>
-<li><a href="#hizmetler">Hizmetler</a></li>
-<li><a href="#nedenbiz">Neden Biz?</a></li>
-<li><a href="#iletisim">İletişim</a></li>
-</ul>
-</nav>
+    <div class="bg-blue-600 text-white py-2 px-4 hidden md:block">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div><i class="fas fa-phone mr-2"></i> (0541) 000 00 00 | 7/24 Hizmetinizdeyiz</div>
+            <div><i class="fas fa-envelope mr-2"></i> info@siteadi.com</div>
+        </div>
+    </div>
 
-<!-- SLIDER -->
-<div class="slider">
-  <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" class="active">
-  <img src="https://images.unsplash.com/photo-1598514982847-8d7b7a3a4b52">
-  <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
-  <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41">
-  <img src="https://images.unsplash.com/photo-1581092334494-9f9f9c99c1c1">
-</div>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800 uppercase tracking-wider">LOGO <span class="text-blue-500">GRUP</span></a>
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                <a href="#anasayfa" class="hover:text-blue-600 transition">Anasayfa</a>
+                <a href="#temizlik" class="hover:text-blue-600 transition">Temizlik Hizmetleri</a>
+                <a href="#insaat" class="hover:text-blue-600 transition">İnşaat & Taahhüt</a>
+                <a href="#hakkimizda" class="hover:text-blue-600 transition">Hakkımızda</a>
+                <a href="#iletisim" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Teklif Al</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="hero-text">
-<h1>Profesyonel Temizlik & İnşaat Hizmetleri</h1>
-<p>Hijyenik, Güvenilir ve Kaliteli Çözümler</p>
-<a href="#iletisim" class="btn">Teklif Al</a>
-</div>
+    <header id="anasayfa" class="hero-bg h-[600px] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hem Temizlikte Hem İnşaatta <br> Profesyonel Çözümler</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-200">25 yıllık deneyimle yaşam alanlarınızı inşa ediyor, en ince detayına kadar hijyenle buluşturuyoruz.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#temizlik" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold transition">Temizlik Hizmetleri</a>
+                <a href="#insaat" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-lg font-bold transition">İnşaat Projeleri</a>
+            </div>
+        </div>
+    </header>
 
-<!-- HAKKIMIZDA -->
-<section id="hakkimizda">
-<h2>Hakkımızda</h2>
-<p style="max-width:800px;margin:auto;text-align:center;">
-Firmamız, temizlik, su tahliyesi, bina temizliği, çevre düzenleme ve inşaat/kiler yapımı alanlarında profesyonel çözümler sunmaktadır. Sahadaki deneyimli ekibimiz ile güvenilir, hızlı ve yüksek kalite standartlarına uygun hizmet sağlıyoruz. Müşteri memnuniyeti ve güvenilirlik odaklı çalışıyoruz.</p>
-</section>
+    <section id="temizlik" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 uppercase tracking-widest">Temizlik Hizmetlerimiz</h2>
+            <div class="h-1 w-20 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-blue-500 hover:-translate-y-2 transition duration-300">
+                <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-home"></i></div>
+                <h3 class="text-xl font-bold mb-2">Ev Temizliği</h3>
+                <p class="text-gray-600">Detaylı, hijyenik ve güvenilir ev temizliği çözümleri.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-blue-500 hover:-translate-y-2 transition duration-300">
+                <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-building"></i></div>
+                <h3 class="text-xl font-bold mb-2">Ofis & İş Yeri</h3>
+                <p class="text-gray-600">Kurumsal kimliğinize yakışır düzenli ofis temizliği.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-blue-500 hover:-translate-y-2 transition duration-300">
+                <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-broom"></i></div>
+                <h3 class="text-xl font-bold mb-2">İnşaat Sonrası Temizlik</h3>
+                <p class="text-gray-600">İnşaat atıklarından arındırılmış anahtar teslim temizlik.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- HIZMETLER -->
-<section id="hizmetler">
-<h2>Hizmetlerimiz</h2>
-<div class="services-grid">
-<div class="service-box"><h3>Asansör Altı Su Tahliyesi</h3><p>Asansör kuyularındaki biriken suların hızlı ve güvenli tahliyesi.</p></div>
-<div class="service-box"><h3>İş Yeri Temizliği</h3><p>Ofis, mağaza, depo gibi alanlarda detaylı temizlik.</p></div>
-<div class="service-box"><h3>Bina & Ortak Alan Temizliği</h3><p>Apartman ve site ortak alanlarının hijyenik temizliği.</p></div>
-<div class="service-box"><h3>Çevre Düzenlemesi</h3><p>Bahçe bakımı, çim biçme, budama ve atık toplanması.</p></div>
-<div class="service-box"><h3>İnşaat & Tadilat</h3><p>Sıva, boya, duvar işleri, tamirat ve küçük inşaat işleri.</p></div>
-<div class="service-box"><h3>Kiler & Depo Yapımı</h3><p>Ev ve iş yerleri için özel ölçüde kiler ve depo alanı yapımı.</p></div>
-</div>
-</section>
+    <section id="insaat" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold uppercase tracking-widest">İnşaat & Taahhüt İşleri</h2>
+                <div class="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-lg shadow-2xl" alt="İnşaat">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-400">Hayallerinizi İnşa Ediyoruz</h3>
+                    <p class="text-gray-400 leading-relaxed">Sadece temizlikte değil, yapı sektöründe de yanınızdayız. Kaba inşaat, ince işçilik, tadilat ve dekorasyon alanlarında uzman ekibimizle anahtar teslim projeler sunuyoruz.</p>
+                    <ul class="space-y-4">
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Anahtar Teslim Konut Projeleri</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Tadilat ve Restorasyon Çalışmaları</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Endüstriyel Yapı Taahhütleri</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> İç Mimari Uygulamalar</li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold transition">Projeleri İncele</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- NEDEN BİZ -->
-<section id="nedenbiz">
-<h2>Neden Biz?</h2>
-<div class="trust-cards">
-<div class="trust-card"><strong>Profesyonel Ekip</strong><p>Uzman ve tecrübeli kadro ile hizmet veriyoruz.</p></div>
-<div class="trust-card"><strong>Zamanında Teslim</strong><p>Her projeyi planlanan sürede tamamlıyoruz.</p></div>
-<div class="trust-card"><strong>Kaliteli Ekipman</strong><p>Modern teknik ekipmanlarla etkili sonuç.</p></div>
-<div class="trust-card"><strong>Müşteri Memnuniyeti</strong><p>Referanslarımızla güven veren hizmet yaklaşımı.</p></div>
-</div>
-</section>
+    <section id="iletisim" class="py-20 container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            <div class="bg-blue-600 p-10 text-white md:w-1/3">
+                <h3 class="text-2xl font-bold mb-6">İletişime Geçin</h3>
+                <p class="mb-4">Hemen fiyat teklifi almak için formu doldurun, 2 saat içinde dönüş yapalım.</p>
+                <div class="mt-8 space-y-4">
+                    <p><i class="fas fa-phone mr-2"></i> (0541) 000 00 00</p>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> Eskişehir / Türkiye</p>
+                </div>
+            </div>
+            <div class="p-10 md:w-2/3">
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Adınız Soyadınız" class="w-full p-3 border rounded-lg focus:outline-blue-500">
+                        <input type="tel" placeholder="Telefon Numaranız" class="w-full p-3 border rounded-lg focus:outline-blue-500">
+                    </div>
+                    <select class="w-full p-3 border rounded-lg focus:outline-blue-500">
+                        <option>Hizmet Seçiniz...</option>
+                        <option>Ev Temizliği</option>
+                        <option>İnşaat Sonrası Temizlik</option>
+                        <option>İnşaat / Tadilat İşleri</option>
+                        <option>Ofis Temizliği</option>
+                    </select>
+                    <textarea placeholder="Mesajınız..." class="w-full p-3 border rounded-lg h-32 focus:outline-blue-500"></textarea>
+                    <button class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">GÖNDER</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<!-- İLETİŞİM -->
-<section id="iletisim">
-<h2>İletişim</h2>
-<p style="text-align:center;font-weight:600;">Telefon: 0545 303 11 26</p>
-<p style="text-align:center;font-weight:600;">E-posta: jesakyrwa@gmail.com</p>
-<p style="text-align:center;font-weight:600;">Adres: 4 Eylül Mh. Shell Cafe</p>
-</section>
+    <footer class="bg-gray-100 py-10 border-t">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 mb-4">&copy; 2025 LOGO GRUP - Tüm Hakları Saklıdır.</p>
+            <div class="flex justify-center space-x-6 text-2xl text-blue-600">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Jesakyrwa Temizlik & İnşaat Hizmetleri</p>
-</footer>
-
-<script>
-// Slider otomatik geçiş
-let slides = document.querySelectorAll('.slider img');
-let currentIndex = 0;
-setInterval(() => {
-  slides[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + 1) % slides.length;
-  slides[currentIndex].classList.add('active');
-}, 3000); // 3 saniyede bir değişir
-</script>
+    <a href="tel:05410000000" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl animate-bounce md:hidden">
+        <i class="fas fa-phone text-2xl"></i>
+    </a>
 
 </body>
 </html>
