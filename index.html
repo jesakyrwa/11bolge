@@ -3,45 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Temizlik & İnşaat Hizmetleri</title>
+<title>Jesakyrwa Temizlik & İnşaat Hizmetleri</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-body{font-family:'Poppins',sans-serif;margin:0;padding:0;color:#222;background:#f7f9fc;}
-header{position:relative;overflow:hidden;}
+body{margin:0;padding:0;font-family:'Poppins',sans-serif;background:#f7f9fc;color:#222;}
+/* NAV */
+nav{background:#111;padding:15px;position:sticky;top:0;z-index:999;}
+nav ul{list-style:none;display:flex;justify-content:center;gap:30px;margin:0;}
+nav ul li a{color:#fff;text-decoration:none;font-weight:500;font-size:15px;}
+nav ul li a:hover{color:#eab308;}
+/* SLIDER */
+.slider{position:relative;overflow:hidden;height:70vh;}
 .slider img{width:100%;height:70vh;object-fit:cover;position:absolute;opacity:0;transition:opacity 1s ease-in-out;}
 .slider img.active{opacity:1;}
-.overlay{position:absolute;top:0;left:0;width:100%;height:70vh;background:rgba(0,0,0,0.45);}
+/* HERO TEXT */
 .hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;}
-.hero-text h1{font-size:44px;margin-bottom:10px;}
+.hero-text h1{font-size:46px;margin-bottom:10px;font-weight:700;}
 .hero-text p{font-size:20px;margin-bottom:20px;}
-.btn{background:#eab308;color:#000;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:600;}
-nav{background:#111;padding:15px;}
-nav ul{list-style:none;display:flex;justify-content:center;gap:30px;}
-nav ul li a{color:#fff;text-decoration:none;font-weight:500;}
-nav ul li a:hover{color:#eab308;}
+.btn{background:#eab308;color:#000;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;}
+/* SECTION */
 section{padding:60px 10%;}
 h2{font-size:32px;text-align:center;margin-bottom:20px;color:#1f2933;}
+p{font-size:16px;line-height:1.6;}
+/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.service-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 15px rgba(0,0,0,0.1);transition:0.3s;}
-.service-box:hover{transform:translateY(-5px);}
-.service-box h3{margin-bottom:12px;color:#111;}
-.trust-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center;}
-.trust-card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 12px rgba(0,0,0,0.08);}
-footer{background:#111;color:#fff;text-align:center;padding:20px;font-size:14px;}
+.service-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:0.3s;}
+.service-box:hover{transform:translateY(-6px);}
+.service-box h3{margin-bottom:12px;color:#111;font-weight:600;}
+/* TRUST */
+.trust-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;text-align:center;}
+.trust-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.08);}
+.trust-card strong{display:block;font-size:18px;margin-bottom:8px;color:#1f2933;}
+/* FOOTER */
+footer{background:#111;color:#fff;text-align:center;padding:18px;font-size:14px;}
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
 <ul>
 <li><a href="#hakkimizda">Hakkımızda</a></li>
 <li><a href="#hizmetler">Hizmetler</a></li>
-<li><a href="#guven">Neden Biz?</a></li>
+<li><a href="#nedenbiz">Neden Biz?</a></li>
 <li><a href="#iletisim">İletişim</a></li>
 </ul>
 </nav>
 
-<header>
+<!-- SLIDER -->
 <div class="slider">
   <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" class="active">
   <img src="https://images.unsplash.com/photo-1598514982847-8d7b7a3a4b52">
@@ -49,62 +58,65 @@ footer{background:#111;color:#fff;text-align:center;padding:20px;font-size:14px;
   <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41">
   <img src="https://images.unsplash.com/photo-1581092334494-9f9f9c99c1c1">
 </div>
-<div class="overlay"></div>
+
 <div class="hero-text">
 <h1>Profesyonel Temizlik & İnşaat Hizmetleri</h1>
-<p>Hijyen, Kalite, Güven — Hepsi Bir Arada</p>
+<p>Hijyenik, Güvenilir ve Kaliteli Çözümler</p>
 <a href="#iletisim" class="btn">Teklif Al</a>
 </div>
-</header>
 
+<!-- HAKKIMIZDA -->
 <section id="hakkimizda">
 <h2>Hakkımızda</h2>
-<p style="text-align:center;max-width:800px;margin:auto;">
-Yaşam alanlarınızın ve iş yerlerinizin temizliği, tahliyesi ve inşaat işleri konusunda profesyonel çözümler sunuyoruz. Sahada deneyimli ekibimiz ve son teknoloji ekipmanlarımızla güvenilir, hızlı ve dikkatli hizmet veriyoruz. Müşteri memnuniyeti bizim en önemli ilkemizdir. :contentReference[oaicite:0]{index=0}
-</p>
+<p style="max-width:800px;margin:auto;text-align:center;">
+Firmamız, temizlik, su tahliyesi, bina temizliği, çevre düzenleme ve inşaat/kiler yapımı alanlarında profesyonel çözümler sunmaktadır. Sahadaki deneyimli ekibimiz ile güvenilir, hızlı ve yüksek kalite standartlarına uygun hizmet sağlıyoruz. Müşteri memnuniyeti ve güvenilirlik odaklı çalışıyoruz.</p>
 </section>
 
+<!-- HIZMETLER -->
 <section id="hizmetler">
 <h2>Hizmetlerimiz</h2>
 <div class="services-grid">
-<div class="service-box"><h3>Asansör Altı Su Tahliyesi</h3><p>Asansör kuyularındaki suyun hızlı ve güvenli tahliyesi.</p></div>
-<div class="service-box"><h3>İş Yeri Temizliği</h3><p>Ofis, mağaza ve işletme temizliği.</p></div>
-<div class="service-box"><h3>Bina & Ortak Alan Temizliği</h3><p>Apartman ve site ortak alanlarının temizliği.</p></div>
-<div class="service-box"><h3>Çevre Düzenlemesi</h3><p>Bahçe bakımı ve çevre düzenleme hizmetleri.</p></div>
-<div class="service-box"><h3>İnşaat & Tadilat</h3><p>Duvar, sıva, boya, tadilat ve tamirat işleri.</p></div>
-<div class="service-box"><h3>Kiler Yapımı</h3><p>Özel ölçüde kiler ve depo alanı yapımı.</p></div>
+<div class="service-box"><h3>Asansör Altı Su Tahliyesi</h3><p>Asansör kuyularındaki biriken suların hızlı ve güvenli tahliyesi.</p></div>
+<div class="service-box"><h3>İş Yeri Temizliği</h3><p>Ofis, mağaza, depo gibi alanlarda detaylı temizlik.</p></div>
+<div class="service-box"><h3>Bina & Ortak Alan Temizliği</h3><p>Apartman ve site ortak alanlarının hijyenik temizliği.</p></div>
+<div class="service-box"><h3>Çevre Düzenlemesi</h3><p>Bahçe bakımı, çim biçme, budama ve atık toplanması.</p></div>
+<div class="service-box"><h3>İnşaat & Tadilat</h3><p>Sıva, boya, duvar işleri, tamirat ve küçük inşaat işleri.</p></div>
+<div class="service-box"><h3>Kiler & Depo Yapımı</h3><p>Ev ve iş yerleri için özel ölçüde kiler ve depo alanı yapımı.</p></div>
 </div>
 </section>
 
-<section id="guven">
+<!-- NEDEN BİZ -->
+<section id="nedenbiz">
 <h2>Neden Biz?</h2>
 <div class="trust-cards">
-<div class="trust-card"><strong>Profesyonel Ekip</strong><p>Deneyimli ve uzman ekip ile hizmet.</p></div>
-<div class="trust-card"><strong>Kaliteli Ekipman</strong><p>Modern makineler ile etkili sonuç.</p></div>
-<div class="trust-card"><strong>Hızlı Çözümler</strong><p>Her zaman zamanında teslim.</p></div>
-<div class="trust-card"><strong>Müşteri Memnuniyeti</strong><p>Referanslarımızla güvenilir hizmet.</p></div>
+<div class="trust-card"><strong>Profesyonel Ekip</strong><p>Uzman ve tecrübeli kadro ile hizmet veriyoruz.</p></div>
+<div class="trust-card"><strong>Zamanında Teslim</strong><p>Her projeyi planlanan sürede tamamlıyoruz.</p></div>
+<div class="trust-card"><strong>Kaliteli Ekipman</strong><p>Modern teknik ekipmanlarla etkili sonuç.</p></div>
+<div class="trust-card"><strong>Müşteri Memnuniyeti</strong><p>Referanslarımızla güven veren hizmet yaklaşımı.</p></div>
 </div>
 </section>
 
+<!-- İLETİŞİM -->
 <section id="iletisim">
 <h2>İletişim</h2>
-<p style="text-align:center;">Telefon: <strong>0545 303 11 26</strong></p>
-<p style="text-align:center;">E-posta: <strong>jesakyrwa@gmail.com</strong></p>
-<p style="text-align:center;">Adres: <strong>4 Eylül Mh. Shell Cafe</strong></p>
+<p style="text-align:center;font-weight:600;">Telefon: 0545 303 11 26</p>
+<p style="text-align:center;font-weight:600;">E-posta: jesakyrwa@gmail.com</p>
+<p style="text-align:center;font-weight:600;">Adres: 4 Eylül Mh. Shell Cafe</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Tüm Hakları Saklıdır.</p>
+<p>© 2026 Jesakyrwa Temizlik & İnşaat Hizmetleri</p>
 </footer>
 
 <script>
 // Slider otomatik geçiş
 let slides = document.querySelectorAll('.slider img');
-let current = 0;
+let currentIndex = 0;
 setInterval(() => {
-  slides[current].classList.remove('active');
-  current = (current + 1) % slides.length;
-  slides[current].classList.add('active');
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].classList.add('active');
 }, 3000); // 3 saniyede bir değişir
 </script>
 
